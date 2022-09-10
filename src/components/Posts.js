@@ -1,16 +1,16 @@
 import React, { memo, useState } from "react";
 import styles from "./Posts.module.css";
 const Posts = ({ data, onGetId, onGetuserId }) => {
-  const postClickHandler = (e, id, userId) => {
+  console.log("posts run");
+  const postClickHandler = (e, id) => {
     onGetId(id);
-    onGetuserId(userId);
   };
   return (
     <div className={styles.postsWrapper}>
       {data.map((obj) => {
         return (
           <div
-            onClick={(e) => postClickHandler(e, obj.id, obj.userId)}
+            onClick={(e) => postClickHandler(e, obj.id)}
             key={Math.random()}
             className={styles.box}
           >

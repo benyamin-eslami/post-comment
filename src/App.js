@@ -7,7 +7,6 @@ import Posts from "./components/Posts";
 function App() {
   const [postsData, setPostsData] = useState([]);
   const [id, setId] = useState("");
-  const [userId, setUserId] = useState("");
 
   const getPosts = useCallback(async () => {
     const api = "https://jsonplaceholder.typicode.com/posts";
@@ -24,14 +23,12 @@ function App() {
   const getId = (id) => {
     setId(id);
   };
-  const GetUserId = (id) => {
-    setUserId(id);
-  };
+
   return (
     <div className="container">
       <div className="left">
         <div className="posts">
-          <Posts onGetuserId={GetUserId} onGetId={getId} data={postsData} />
+          <Posts onGetId={getId} data={postsData} />
         </div>
       </div>
       <div className="right">
