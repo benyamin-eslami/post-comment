@@ -1,0 +1,13 @@
+.box {
+  cursor: pointer;
+  border: 1px solid red;
+  margin: 1rem;
+  padding: 1rem;
+}
+.box:hover {
+  background-color: red;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.postsWrapper {
+}

@@ -1,0 +1,12 @@
+.postComents {
+  max-width: 50rem;
+  border: 1px solid rebeccapurple;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.postComentsItem {
+  margin: 1rem 0;
+  border: 1px solid green;
+  padding: 1rem;
+  text-align: center;
+}
